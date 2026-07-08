@@ -81,18 +81,19 @@
 
     <header class="bg-ubblue text-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex items-center justify-between max-w-3xl">
-            <div class="flex items-center space-x-3">
-                <!-- Ganti bagian ini: Hapus tag <i> dan masukkan tag <img> -->
-                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden p-1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Logo_Universitas_Brawijaya.svg/1280px-Logo_Universitas_Brawijaya.svg.png" alt="Logo UB" class="w-full h-full object-contain">
+            <div class="flex items-center space-x-3 sm:space-x-4">
+                <!-- Memperbesar ukuran wadah logo dan menggunakan logo resmi -->
+                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center overflow-hidden p-0.5 shrink-0 shadow-sm">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Logo_Universitas_Brawijaya.svg/1280px-Logo_Universitas_Brawijaya.svg.png" alt="Logo Universitas Brawijaya" class="w-full h-full object-contain">
                 </div>
-                <div>
-                    <h1 class="text-lg font-bold leading-none tracking-tight">ASIAP</h1>
-                    <p class="text-xs text-ubyellow font-medium mt-1">Fakultas Ilmu Administrasi</p>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-lg sm:text-xl font-extrabold leading-none tracking-tight mb-1">ASIAP</h1>
+                    <p class="text-[10px] sm:text-xs text-ubyellow font-bold leading-tight uppercase">Fakultas Ilmu Administrasi</p>
+                    <p class="text-[10px] sm:text-xs text-gray-200 font-medium leading-tight uppercase">Universitas Brawijaya</p>
                 </div>
             </div>
             <!-- Tombol Bantuan -->
-            <button class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
+            <button class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition shrink-0 ml-2">
                 <i class="fas fa-question-circle"></i>
             </button>
         </div>
@@ -165,7 +166,7 @@
                 
                 <!-- Card: Identitas -->
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
-                    <h3 class="text-lg font-bold text-ubblue mb-6 border-b pb-3">1. IDENTITAS</h3>
+                    <h3 class="text-lg font-bold text-ubblue mb-6 border-b pb-3">1. Identitas Pelapor</h3>
                     <div class="space-y-5">
                         
                         <div>
@@ -188,14 +189,14 @@
                         </div>
 
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 mb-2">NIM/NIP/NIK <span class="text-red-500">*</span></label>
+                            <label class="block text-sm font-bold text-gray-800 mb-2">NIM / NIP / NIK <span class="text-red-500">*</span></label>
                             <input type="text" name="nomorInduk" required class="w-full border border-gray-300 rounded-xl bg-gray-50 focus:bg-white focus:border-ubblue outline-none p-3.5 text-gray-800 transition shadow-sm" placeholder="Nomor Induk">
                         </div>
 
                         <div>
                             <label class="block text-sm font-bold text-gray-800 mb-2">Nomor WhatsApp Aktif <span class="text-red-500">*</span></label>
                             <input type="tel" name="noWa" pattern="[0-9]+" required class="w-full border border-gray-300 rounded-xl bg-gray-50 focus:bg-white focus:border-ubblue outline-none p-3.5 text-gray-800 transition shadow-sm" placeholder="Contoh: 081234567890">
-                            <p class="text-xs text-gray-500 mt-1.5 ml-1">Diperlukan untuk notifikasi tindak lanjut.</p>
+                            <p class="text-xs text-gray-500 mt-1.5 ml-1">Diperlukan untuk notifikasi tindak lanjut (via Fonnte).</p>
                         </div>
 
                     </div>
